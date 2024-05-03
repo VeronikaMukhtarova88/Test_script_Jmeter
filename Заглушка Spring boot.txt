@@ -1,0 +1,21 @@
+package com.example.Webtours_test.Controllers;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/")
+
+public class UserAuth {
+
+    @PostMapping ("/cgi-bin/login.pl")
+    public String auth() {
+        return "Autorized2!";
+        }
+    @GetMapping ("/cgi-bin/login.pl")
+    public String auth2() {
+        return "Autorized2!";
+    }
+}
